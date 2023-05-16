@@ -1,8 +1,8 @@
 {
-  "name": "sap.m.tutorial.walkthrough.06",
+  "name": "sap.m.tutorial.walkthrough.07",
   "version": "1.0.0",
   "author": "SAP SE",
-  "description": "Sample: Walkthrough - Step 6 - Modules",
+  "description": "Sample: Walkthrough - Step 7 - JSON Model",
   "scripts": {
     "start": "ui5 serve",
     "build": "ui5 build"
@@ -11,6 +11,6 @@
     "@openui5/themelib_sap_fiori_3": "^1"
   },
   "devDependencies": {
-    "@ui5/cli": "^2.0.0"
+    "@ui5/cli": "^3.1.2"
   }
 }

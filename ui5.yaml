@@ -1,8 +1,13 @@
 specVersion: '2.3'
 metadata:
-  name: "sap.m.tutorial.walkthrough.06"
+  name: "sap.m.tutorial.walkthrough.07"
 type: application
+framework:
+  name: SAPUI5
+  version: "1.105.1"
+  libraries: 
+    - name: sap.m
 resources:
   configuration:
     paths:
-      webapp: .
+      webapp: webapp
