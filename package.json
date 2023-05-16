@@ -1,8 +1,8 @@
 {
-  "name": "sap.m.tutorial.walkthrough.02",
+  "name": "sap.m.tutorial.walkthrough.03",
   "version": "1.0.0",
   "author": "SAP SE",
-  "description": "Sample: Walkthrough - Step 2 - Bootstrap",
+  "description": "Sample: Walkthrough - Step 3 - Controls",
   "scripts": {
     "start": "ui5 serve",
     "build": "ui5 build"
