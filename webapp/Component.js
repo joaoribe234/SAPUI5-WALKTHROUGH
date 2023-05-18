@@ -1,9 +1,7 @@
 sap.ui.define([
 	"sap/ui/core/UIComponent",
-	"sap/ui/model/json/JSONModel",
-	"sap/ui/Device",
-	"sap/base/Log"
-], function (UIComponent, JSONModel, Device, Log) {
+	"sap/ui/model/json/JSONModel"
+], function (UIComponent, JSONModel) {
 	"use strict";
 
 	return UIComponent.extend("sap.ui.demo.walkthrough.Component", {
@@ -25,17 +23,8 @@ sap.ui.define([
 			};
 			var oModel = new JSONModel(oData);
 			this.setModel(oModel);
-
-			// open support window (only for demonstration purpose)
-			if (Device.system.desktop) {
-				setTimeout(function () {
-					Log.info("opening support window");
-					sap.ui.require(["sap/ui/core/support/Support"], function (Support) {
-						var oSupport = Support.getStub("APPLICATION");
-						oSupport.openSupportTool();
-					});
-				}, 3000);
-			}
+			// create the views based on the url/hash
+			this.getRouter().initialize();
 		}
 	});
 
