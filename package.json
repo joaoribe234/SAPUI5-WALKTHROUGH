@@ -6,9 +6,11 @@
   "description": "UI5 Demo App - Walkthrough Tutorial",
   "scripts": {
     "start": "ui5 serve",
-    "build": "ui5 build"
+    "build": "ui5 build",
+    "proxy": "node proxy.js"
   },
   "devDependencies": {
-    "@ui5/cli": "^3"
+    "@ui5/cli": "^3",
+    "cors-anywhere": "^0.4.4"
   }
 }
